@@ -7,7 +7,6 @@
   {applications, [
                   kernel,
                   stdlib
-                  %cowboy
                  ]},
   {mod, { kv_app, []}},
   {env, []}

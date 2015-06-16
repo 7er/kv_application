@@ -28,7 +28,13 @@ init([]) ->
            [
             {tag1,
              {kv, start_link, []},
-             transient,
+             permanent,
+             10000,
+             worker,
+             dynamic},
+            {tag2,
+             {kv_rest, start_link, []},
+             permanent,
              10000,
              worker,
              dynamic}
