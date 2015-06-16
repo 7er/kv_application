@@ -1,0 +1,14 @@
+* kv_application
+  Key Value Store
+
+  Develop an in-memory key value store. The store must support data
+  storage and retrieval through TCP, UDP, and http REST
+  interfaces. The store must cater for arbitrary data types.
+
+** design
+*** use cowboy for rest
+*** use maps and agent like structure for map
+*** use gen_tcp and gen_udp for tcp/ip interface
+    term to binary, binary to term
+**** udp
+     use a ref for each request reply pair

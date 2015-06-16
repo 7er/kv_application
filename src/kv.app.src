@@ -1,0 +1,12 @@
+{application, kv,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { kv_app, []}},
+  {env, []}
+ ]}.
