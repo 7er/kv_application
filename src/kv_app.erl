@@ -10,6 +10,11 @@
 %% ===================================================================
 
 start(_StartType, _StartArgs) ->
+    %% Dispatch = cowboy_router:compile([
+    %%                                   {'_', [{"/", kv_handler, []}]}
+    %%                                  ]),
+    %% {ok, _} = cowboy:start_http(kv_http_listener, 100, [{port, 8080}],
+    %%                             [{env, [{dispatch, Dispatch}]}]),
     kv_sup:start_link().
 
 stop(_State) ->

@@ -1,11 +1,13 @@
 {application, kv,
  [
-  {description, ""},
+  {description, "Key Value Store"},
   {vsn, "1"},
+  {modules, [kv_app, kv_sup, kv]},
   {registered, []},
   {applications, [
                   kernel,
                   stdlib
+                  %cowboy
                  ]},
   {mod, { kv_app, []}},
   {env, []}
