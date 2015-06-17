@@ -6,8 +6,7 @@
   {registered, []},
   {applications, [
                   kernel,
-                  stdlib,
-                  cowboy
+                  stdlib
                  ]},
   {mod, { kv_app, []}},
   {env, []}

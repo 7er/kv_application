@@ -50,7 +50,7 @@ start(_StartType, _StartArgs) ->
                       AcceptorCount,
                       [{port, Port}],
                                 [{env, [{dispatch, Dispatch}]}]),
-    kv_rest_sup:start_link().
+    kv_sup:start_link().
 
 %%--------------------------------------------------------------------
 %% @private
